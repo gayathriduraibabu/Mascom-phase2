@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.1 on win32)" generated="2024-02-26T15:47:16.412832" rpa="false" schemaversion="5">
+<suite id="s1" name="LoginTest" source="C:\Users\gayathri.duraibabu\PycharmProjects\pythonProject1\Mascom1\TestCases\LoginTest.robot">
+<test id="s1-t1" name="Login Test" line="12">
+<kw name="Open My Browser" owner="LoginKeywords">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-02-26T15:47:16.694177" level="INFO">Opening browser 'chrome' to base url 'https://dev-mascomwireless-bpm.creatio.com/'.</msg>
+<arg>${SiteUrl}</arg>
+<arg>${Browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-02-26T15:47:16.694177" elapsed="3.633965"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-02-26T15:47:20.328142" elapsed="0.125798"/>
+</kw>
+<arg>${SiteUrl}</arg>
+<arg>${Browser}</arg>
+<status status="PASS" start="2024-02-26T15:47:16.694177" elapsed="3.759763"/>
+</kw>
+<kw name="Login with username and password" owner="LoginKeywords">
+<kw name="Set Selenium Speed" owner="SeleniumLibrary">
+<arg>3 seconds</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" start="2024-02-26T15:47:20.455940" elapsed="0.000000"/>
+</kw>
+<kw name="Set Selenium Timeout" owner="SeleniumLibrary">
+<arg>10 seconds</arg>
+<doc>Sets the timeout that is used by various keywords.</doc>
+<status status="PASS" start="2024-02-26T15:47:20.455940" elapsed="3.001557"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>Version</arg>
+<arg>120</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2024-02-26T15:47:23.457497" elapsed="44.819102"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-02-26T15:48:08.276599" level="INFO">Typing text 'User1' into text field 'id:loginEdit-el'.</msg>
+<arg>${txt_loginUserName}</arg>
+<arg>${userName}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-26T15:48:08.276599" elapsed="9.118946"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-02-26T15:48:17.395545" level="INFO">Typing text 'Mascom@123' into text field 'id:passwordEdit-el'.</msg>
+<arg>${txt_loginPassword}</arg>
+<arg>${passWord}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-26T15:48:17.395545" elapsed="9.110517"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-02-26T15:48:26.506062" level="INFO">Clicking element 'id:t-comp19-textEl'.</msg>
+<arg>${btn_signIn}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-26T15:48:26.506062" elapsed="6.092156"/>
+</kw>
+<arg>${username}</arg>
+<arg>${password}</arg>
+<status status="PASS" start="2024-02-26T15:47:20.454939" elapsed="72.143279"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>Creatio</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2024-02-26T15:48:32.598218" elapsed="34.753077"/>
+</kw>
+<kw name="Verify Successfull Login" owner="LoginKeywords">
+<kw name="Title Should Be" owner="SeleniumLibrary">
+<msg time="2024-02-26T15:49:10.386067" level="INFO">Page title is 'Creatio'.</msg>
+<arg>Creatio</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<status status="PASS" start="2024-02-26T15:49:07.352128" elapsed="3.033939"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>All apps</arg>
+<arg>60</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2024-02-26T15:49:10.386067" elapsed="12.660553"/>
+</kw>
+<status status="PASS" start="2024-02-26T15:49:07.352128" elapsed="15.694492"/>
+</kw>
+<kw name="Create New PR Request" owner="LoginKeywords">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-02-26T15:49:23.047629" level="INFO">Clicking element 'xpath://body/crt-root[1]/crt-schema-outlet[1]/crt-page[1]/crt-reusable-schema[1]/mainshell[1]/crt-flex[2]/div[1]/crt-navigation-panel[1]/div[1]/div[2]/crt-navigation-panel-item[29]/div[1]/div[2]'.</msg>
+<arg>${ele_purchaseReq}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-26T15:49:23.047629" elapsed="6.271213"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>Purchase Requisition</arg>
+<arg>60</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2024-02-26T15:49:29.318842" elapsed="3.021027"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-02-26T15:49:32.339869" level="INFO">Clicking button 'xpath://button[@class='mat-focus-indicator crt-button mat-flat-button mat-button-base crt-button--contained mat-primary button-icon-position-left button-size-large button-with-icon ng-star-inserted']'.</msg>
+<arg>${btn_newPurchaseReq}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-26T15:49:32.339869" elapsed="15.155344"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>Requester information</arg>
+<arg>60</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2024-02-26T15:49:47.495213" elapsed="6.246129"/>
+</kw>
+<kw name="Select From List By Value" owner="SeleniumLibrary">
+<msg time="2024-02-26T15:49:53.741342" level="INFO">Selecting options from selection list '//input[@id='f513cd57-f472-d543-c95a-2f27a92b7d42']' by value psiog.</msg>
+<msg time="2024-02-26T15:49:59.899678" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-57.png"&gt;&lt;img src="selenium-screenshot-57.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-02-26T15:49:59.899678" level="FAIL">List with locator '//input[@id='f513cd57-f472-d543-c95a-2f27a92b7d42']' not found.</msg>
+<arg>//input[@id='f513cd57-f472-d543-c95a-2f27a92b7d42']</arg>
+<arg>psiog</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<status status="FAIL" start="2024-02-26T15:49:53.741342" elapsed="6.174916">List with locator '//input[@id='f513cd57-f472-d543-c95a-2f27a92b7d42']' not found.</status>
+</kw>
+<status status="FAIL" start="2024-02-26T15:49:23.046620" elapsed="36.869638">List with locator '//input[@id='f513cd57-f472-d543-c95a-2f27a92b7d42']' not found.</status>
+</kw>
+<kw name="close my Browser" owner="LoginKeywords">
+<status status="NOT RUN" start="2024-02-26T15:49:59.916258" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2024-02-26T15:47:16.693079" elapsed="163.223179">List with locator '//input[@id='f513cd57-f472-d543-c95a-2f27a92b7d42']' not found.</status>
+</test>
+<status status="FAIL" start="2024-02-26T15:47:16.422703" elapsed="163.493555"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="LoginTest">LoginTest</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
