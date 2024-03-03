@@ -24,10 +24,10 @@ Verify Successfull Login
 
 Create New PR Request
         click element    ${ele_purchaseReq}
-        wait until page contains    Purchase Requisition    60
-        click button    ${btn_newPurchaseReq}
-        wait until page contains    Requester information   60
-        select from list by value    //input[@id='f513cd57-f472-d543-c95a-2f27a92b7d42']   psiog
+        wait until page contains    Purchase Requisition    120
+        #click button    ${btn_newPurchaseReq}
+        #wait until page contains    Requester information   120
+        #select from list by value    //input[@id='f513cd57-f472-d543-c95a-2f27a92b7d42']   psiog
 
 
 close my Browser

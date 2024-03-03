@@ -1,6 +1,8 @@
 *** Settings ***
 Library    SeleniumLibrary
 Resource    ../Resources/LoginKeywords.robot
+Resource    ./test_firsttest.py
+
 
 *** Variables ***
 ${Browser}  chrome
