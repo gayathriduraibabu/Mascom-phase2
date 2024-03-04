@@ -25,6 +25,6 @@ steps:
   displayName: 'Install dependencies'
 
 - script: |
-    
+    pip install webdriver-manager
     robot Mascom1/TestCases/LoginTest.robot
   displayName: 'robot test'
