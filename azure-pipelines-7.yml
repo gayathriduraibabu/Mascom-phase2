@@ -25,8 +25,6 @@ steps:
   displayName: 'Install dependencies'
 
 - script: |
-    pip install webdriver-manager
-    ${driverpath}=    Evaluate    webdriver_manager.chrome.ChromeDriverManager().install()
-     modules=webdriver_manager.chrome
+    pip install webdriver_manager
     robot Mascom1/TestCases/LoginTest.robot
   displayName: 'robot test'
