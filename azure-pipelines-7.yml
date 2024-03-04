@@ -26,5 +26,5 @@ steps:
 
 - script: |
     
-    Mascom1/TestCases/LoginTest.robot
+    robot Mascom1/TestCases/LoginTest.robot
   displayName: 'robot test'
