@@ -26,5 +26,5 @@ steps:
 
 - script: |
     pip install pytest pytest-azurepipelines
-    robot Mascom1\TestCases\LoginTest.robot
+    robot Mascom1/TestCases/LoginTest.robot
   displayName: 'robot test'
