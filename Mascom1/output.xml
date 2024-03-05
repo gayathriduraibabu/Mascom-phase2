@@ -1,121 +1,56 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.0 (Python 3.12.1 on win32)" generated="2024-03-04T14:06:26.573922" rpa="false" schemaversion="5">
+<robot generator="Robot 7.0 (Python 3.12.1 on win32)" generated="2024-03-05T10:37:13.230714" rpa="false" schemaversion="5">
 <suite id="s1" name="LoginTest" source="C:\Users\gayathri.duraibabu\PycharmProjects\pythonProject1\Mascom1\TestCases\LoginTest.robot">
 <test id="s1-t1" name="Login Test" line="14">
 <kw name="Open My Browser" owner="LoginKeywords">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2024-03-04T14:06:27.105365" level="INFO">Opening browser 'chrome' to base url 'https://dev-mascomwireless-bpm.creatio.com/'.</msg>
 <arg>${SiteUrl}</arg>
 <arg>${Browser}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-03-04T14:06:27.105365" elapsed="6.102074"/>
+<status status="FAIL" start="2024-03-05T10:37:14.249692" elapsed="0.000000">Execution terminated by signal</status>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2024-03-04T14:06:33.207439" elapsed="0.115234"/>
+<status status="NOT RUN" start="2024-03-05T10:37:14.249692" elapsed="0.000000"/>
 </kw>
 <arg>${SiteUrl}</arg>
 <arg>${Browser}</arg>
-<status status="PASS" start="2024-03-04T14:06:27.104256" elapsed="6.218417"/>
+<status status="FAIL" start="2024-03-05T10:37:14.248507" elapsed="0.001185">Execution terminated by signal</status>
 </kw>
 <kw name="Login with username and password" owner="LoginKeywords">
-<kw name="Set Selenium Speed" owner="SeleniumLibrary">
-<arg>3 seconds</arg>
-<doc>Sets the delay that is waited after each Selenium command.</doc>
-<status status="PASS" start="2024-03-04T14:06:33.323670" elapsed="0.001000"/>
-</kw>
-<kw name="Set Selenium Timeout" owner="SeleniumLibrary">
-<arg>10 seconds</arg>
-<doc>Sets the timeout that is used by various keywords.</doc>
-<status status="PASS" start="2024-03-04T14:06:33.324670" elapsed="3.002754"/>
-</kw>
-<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
-<arg>Version</arg>
-<arg>120</arg>
-<doc>Waits until ``text`` appears on the current page.</doc>
-<status status="PASS" start="2024-03-04T14:06:36.327424" elapsed="9.437969"/>
-</kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-03-04T14:06:45.766393" level="INFO">Typing text 'User1' into text field 'id:loginEdit-el'.</msg>
-<arg>${txt_loginUserName}</arg>
-<arg>${userName}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-03-04T14:06:45.765393" elapsed="9.123747"/>
-</kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-03-04T14:06:54.889140" level="INFO">Typing text 'Mascom@123' into text field 'id:passwordEdit-el'.</msg>
-<arg>${txt_loginPassword}</arg>
-<arg>${passWord}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-03-04T14:06:54.889140" elapsed="9.120488"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-03-04T14:07:04.011128" level="INFO">Clicking element 'id:t-comp19-textEl'.</msg>
-<arg>${btn_signIn}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-03-04T14:07:04.010133" elapsed="6.067983"/>
-</kw>
 <arg>${username}</arg>
 <arg>${password}</arg>
-<status status="PASS" start="2024-03-04T14:06:33.323670" elapsed="36.754446"/>
+<status status="NOT RUN" start="2024-03-05T10:37:14.250846" elapsed="0.000000"/>
 </kw>
 <kw name="Wait Until Page Contains" owner="SeleniumLibrary">
 <arg>Creatio</arg>
 <doc>Waits until ``text`` appears on the current page.</doc>
-<status status="PASS" start="2024-03-04T14:07:10.081134" elapsed="9.754148"/>
+<status status="NOT RUN" start="2024-03-05T10:37:14.250846" elapsed="0.000000"/>
 </kw>
 <kw name="Verify Successfull Login" owner="LoginKeywords">
-<kw name="Title Should Be" owner="SeleniumLibrary">
-<msg time="2024-03-04T14:07:22.850679" level="INFO">Page title is 'Creatio'.</msg>
-<arg>Creatio</arg>
-<doc>Verifies that the current page title equals ``title``.</doc>
-<status status="PASS" start="2024-03-04T14:07:19.837782" elapsed="3.012897"/>
-</kw>
-<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
-<arg>All apps</arg>
-<arg>60</arg>
-<doc>Waits until ``text`` appears on the current page.</doc>
-<status status="PASS" start="2024-03-04T14:07:22.850679" elapsed="12.872031"/>
-</kw>
-<status status="PASS" start="2024-03-04T14:07:19.836627" elapsed="15.886587"/>
+<status status="NOT RUN" start="2024-03-05T10:37:14.252043" elapsed="0.000000"/>
 </kw>
 <kw name="Create New PR Request" owner="LoginKeywords">
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-03-04T14:07:35.727201" level="INFO">Clicking element 'xpath://div[@data-item-marker='Purchase Requisition']'.</msg>
-<arg>${ele_purchaseReq}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-03-04T14:07:35.726208" elapsed="6.081410"/>
-</kw>
-<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
-<arg>Purchase Requisition</arg>
-<arg>120</arg>
-<doc>Waits until ``text`` appears on the current page.</doc>
-<status status="PASS" start="2024-03-04T14:07:41.808097" elapsed="3.025125"/>
-</kw>
-<status status="PASS" start="2024-03-04T14:07:35.725210" elapsed="9.108508"/>
+<status status="NOT RUN" start="2024-03-05T10:37:14.252043" elapsed="0.000000"/>
 </kw>
 <kw name="close my Browser" owner="LoginKeywords">
-<kw name="Close All Browsers" owner="SeleniumLibrary">
-<doc>Closes all open browsers and resets the browser cache.</doc>
-<status status="PASS" start="2024-03-04T14:07:44.836218" elapsed="5.304083"/>
+<status status="NOT RUN" start="2024-03-05T10:37:14.253131" elapsed="0.000000"/>
 </kw>
-<status status="PASS" start="2024-03-04T14:07:44.835219" elapsed="5.305455"/>
-</kw>
-<status status="PASS" start="2024-03-04T14:06:27.104256" elapsed="83.036918"/>
+<status status="FAIL" start="2024-03-05T10:37:14.246303" elapsed="0.006828">Execution terminated by signal</status>
 </test>
-<status status="PASS" start="2024-03-04T14:06:26.583597" elapsed="83.559654"/>
+<status status="FAIL" start="2024-03-05T10:37:13.249242" elapsed="1.006072"/>
 </suite>
 <statistics>
 <total>
-<stat pass="1" fail="0" skip="0">All Tests</stat>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="1" fail="0" skip="0" id="s1" name="LoginTest">LoginTest</stat>
+<stat pass="0" fail="1" skip="0" id="s1" name="LoginTest">LoginTest</stat>
 </suite>
 </statistics>
 <errors>
-<msg time="2024-03-04T14:06:27.102200" level="ERROR">Error in file 'C:\Users\gayathri.duraibabu\PycharmProjects\pythonProject1\Mascom1\TestCases\LoginTest.robot' on line 4: Invalid resource file extension '.py'. Supported extensions are '.json', '.resource', '.rest', '.robot', '.rsrc', '.rst', '.tsv' and '.txt'.</msg>
+<msg time="2024-03-05T10:37:14.243965" level="ERROR">Error in file 'C:\Users\gayathri.duraibabu\PycharmProjects\pythonProject1\Mascom1\TestCases\LoginTest.robot' on line 4: Invalid resource file extension '.py'. Supported extensions are '.json', '.resource', '.rest', '.robot', '.rsrc', '.rst', '.tsv' and '.txt'.</msg>
 </errors>
 </robot>
