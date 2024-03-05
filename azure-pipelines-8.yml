@@ -23,6 +23,7 @@ steps:
 - script: |
     python -m pip install --upgrade pip
     pip install -r requirements.txt
+    pip install -U setuptools
   displayName: 'Install dependencies'
 
 - script: |
@@ -31,6 +32,7 @@ steps:
     sudo mv chromedriver /usr/bin/chromedriver
     sudo chown root:root /usr/bin/chromedriver
     sudo chmod +x /usr/bin/chromedriver 
+  displayName: 'Install ChromeDriver'
 
 - script: |
     robot Mascom1/TestCases/LoginTest.robot
