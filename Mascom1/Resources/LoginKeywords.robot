@@ -11,7 +11,7 @@ Open My Browser
 
 Login with username and password
         [Arguments]    ${userName}     ${passWord}
-        set selenium speed    2 seconds
+        set selenium speed    3 seconds
         set selenium timeout    10 seconds
         wait until page contains    Version     120
         input text      ${txt_loginUserName}    ${userName}
