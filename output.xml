@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.1 on win32)" generated="2024-03-12T15:57:31.032271" rpa="false" schemaversion="5">
+<suite id="s1" name="LoginTest" source="C:\Users\gayathri.duraibabu\PycharmProjects\Mascom-phase2\Mascom1\TestCases\LoginTest.robot">
+<test id="s1-t1" name="Login Test" line="14">
+<kw name="Open My Browser" owner="LoginKeywords">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-03-12T15:57:32.757340" level="INFO">Opening browser 'chrome' to base url 'https://dev-mascomwireless-bpm.creatio.com/'.</msg>
+<arg>${SiteUrl}</arg>
+<arg>${Browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-03-12T15:57:32.756114" elapsed="10.434666"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-03-12T15:57:43.190780" elapsed="0.137022"/>
+</kw>
+<arg>${SiteUrl}</arg>
+<arg>${Browser}</arg>
+<status status="PASS" start="2024-03-12T15:57:32.755006" elapsed="10.573297"/>
+</kw>
+<kw name="Login with username and password" owner="LoginKeywords">
+<kw name="Set Selenium Speed" owner="SeleniumLibrary">
+<arg>3 seconds</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" start="2024-03-12T15:57:43.330776" elapsed="0.001002"/>
+</kw>
+<kw name="Set Selenium Timeout" owner="SeleniumLibrary">
+<arg>10 seconds</arg>
+<doc>Sets the timeout that is used by various keywords.</doc>
+<status status="PASS" start="2024-03-12T15:57:43.331778" elapsed="3.006353"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>Version</arg>
+<arg>120</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2024-03-12T15:57:46.338131" elapsed="70.201793"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-03-12T15:58:56.539924" level="INFO">Typing text 'User1' into text field 'id:loginEdit-el'.</msg>
+<arg>${txt_loginUserName}</arg>
+<arg>${userName}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-12T15:58:56.539924" elapsed="11.024230"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-03-12T15:59:07.566130" level="INFO">Typing text 'Mascom@123' into text field 'id:passwordEdit-el'.</msg>
+<arg>${txt_loginPassword}</arg>
+<arg>${passWord}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-12T15:59:07.565275" elapsed="9.629412"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-03-12T15:59:17.194687" level="INFO">Clicking element 'id:t-comp19-textEl'.</msg>
+<arg>${btn_signIn}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-12T15:59:17.194687" elapsed="6.788420"/>
+</kw>
+<arg>${username}</arg>
+<arg>${password}</arg>
+<status status="PASS" start="2024-03-12T15:57:43.329778" elapsed="100.653329"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>Creatio</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2024-03-12T15:59:23.984742" elapsed="15.776686"/>
+</kw>
+<kw name="Verify Successfull Login" owner="LoginKeywords">
+<kw name="Title Should Be" owner="SeleniumLibrary">
+<msg time="2024-03-12T15:59:43.564915" level="INFO">Page title is 'Creatio'.</msg>
+<arg>Creatio</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<status status="PASS" start="2024-03-12T15:59:40.363509" elapsed="3.201910"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>All apps</arg>
+<arg>60</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2024-03-12T15:59:43.565419" elapsed="30.743812"/>
+</kw>
+<status status="PASS" start="2024-03-12T15:59:40.363509" elapsed="33.945722"/>
+</kw>
+<kw name="Create New PR Request" owner="LoginKeywords">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-03-12T16:00:14.359158" level="INFO">Clicking element 'xpath://div[@data-item-marker='Purchase Requisition']'.</msg>
+<msg time="2024-03-12T16:00:23.418863" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-03-12T16:00:23.418863" level="FAIL">ElementClickInterceptedException: Message: element click intercepted: Element &lt;div _ngcontent-myj-c416="" class="navigation-item-wrapper" data-item-marker="Purchase Requisition"&gt;...&lt;/div&gt; is not clickable at point (125, 519). Other element would receive the click: &lt;img id="mountains-image" class="mountains-image" src="assets/mountains-image.svg"&gt;
+  (Session info: chrome=122.0.6261.69)
+Stacktrace:
+	GetHandleVerifier [0x00007FF6D282AD32+56930]
+	(No symbol) [0x00007FF6D279F632]
+	(No symbol) [0x00007FF6D26542E5]
+	(No symbol) [0x00007FF6D26A0A80]
+	(No symbol) [0x00007FF6D269E8AB]
+	(No symbol) [0x00007FF6D269C0B4]
+	(No symbol) [0x00007FF6D269AE45]
+	(No symbol) [0x00007FF6D268F798]
+	(No symbol) [0x00007FF6D26BBC9A]
+	(No symbol) [0x00007FF6D268F09A]
+	(No symbol) [0x00007FF6D26BBEB0]
+	(No symbol) [0x00007FF6D26D81E2]
+	(No symbol) [0x00007FF6D26BBA43]
+	(No symbol) [0x00007FF6D268D438]
+	(No symbol) [0x00007FF6D268E4D1]
+	GetHandleVerifier [0x00007FF6D2BA6ABD+3709933]
+	GetHandleVerifier [0x00007FF6D2BFFFFD+4075821]
+	GetHandleVerifier [0x00007FF6D2BF818F+4043455]
+	GetHandleVerifier [0x00007FF6D28C9766+706710]
+	(No symbol) [0x00007FF6D27AB90F]
+	(No symbol) [0x00007FF6D27A6AF4]
+	(No symbol) [0x00007FF6D27A6C4C]
+	(No symbol) [0x00007FF6D2796904]
+	BaseThreadInitThunk [0x00007FFB0C1353E0+16]
+	RtlUserThreadStart [0x00007FFB0D88485B+43]
+</msg>
+<arg>${ele_purchaseReq}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="FAIL" start="2024-03-12T16:00:14.359158" elapsed="9.149329">ElementClickInterceptedException: Message: element click intercepted: Element &lt;div _ngcontent-myj-c416="" class="navigation-item-wrapper" data-item-marker="Purchase Requisition"&gt;...&lt;/div&gt; is not clickable at point (125, 519). Other element would receive the click: &lt;img id="mountains-image" class="mountains-image" src="assets/mountains-image.svg"&gt;
+  (Session info: chrome=122.0.6261.69)
+Stacktrace:
+	GetHandleVerifier [0x00007FF6D282AD32+56930]
+	(No symbol) [0x00007FF6D279F632]
+	(No symbol) [0x00007FF6D26542E5]
+	(No symbol) [0x00007FF6D26A0A80]
+	(No symbol) [0x00007FF6D269E8AB]
+	(No symbol) [0x00007FF6D269C0B4]
+	(No symbol) [0x00007FF6D269AE45]
+	(No symbol) [0x00007FF6D268F798]
+	(No symbol) [0x00007FF6D26BBC9A]
+	(No symbol) [0x00007FF6D268F09A]
+	(No symbol) [0x00007FF6D26BBEB0]
+	(No symbol) [0x00007FF6D26D81E2]
+	(No symbol) [0x00007FF6D26BBA43]
+	(No symbol) [0x00007FF6D268D438]
+	(No symbol) [0x00007FF6D268E4D1]
+	GetHandleVerifier [0x00007FF6D2BA6ABD+3709933]
+	GetHandleVerifier [0x00007FF6D2BFFFFD+4075821]
+	GetHandleVerifier [0x00007FF6D2BF818F+4043455]
+	GetHandleVerifier [0x00007FF6D28C9766+706710]
+	(No symbol) [0x00007FF6D27AB90F]
+	(No symbol) [0x00007FF6D27A6AF4]
+	(No symbol) [0x00007FF6D27A6C4C]
+	(No symbol) [0x00007FF6D2796904]
+	BaseThreadInitThunk [0x00007FFB0C1353E0+16]
+	RtlUserThreadStart [0x00007FFB0D88485B+43]
+</status>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>Purchase Requisition</arg>
+<arg>120</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="NOT RUN" start="2024-03-12T16:00:23.508487" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2024-03-12T16:00:14.359158" elapsed="9.149329">ElementClickInterceptedException: Message: element click intercepted: Element &lt;div _ngcontent-myj-c416="" class="navigation-item-wrapper" data-item-marker="Purchase Requisition"&gt;...&lt;/div&gt; is not clickable at point (125, 519). Other element would receive the click: &lt;img id="mountains-image" class="mountains-image" src="assets/mountains-image.svg"&gt;
+  (Session info: chrome=122.0.6261.69)
+Stacktrace:
+	GetHandleVerifier [0x00007FF6D282AD32+56930]
+	(No symbol) [0x00007FF6D279F632]
+	(No symbol) [0x00007FF6D26542E5]
+	(No symbol) [0x00007FF6D26A0A80]
+	(No symbol) [0x00007FF6D269E8AB]
+	(No symbol) [0x00007FF6D269C0B4]
+	(No symbol) [0x00007FF6D269AE45]
+	(No symbol) [0x00007FF6D268F798]
+	(No symbol) [0x00007FF6D26BBC9A]
+	(No symbol) [0x00007FF6D268F09A]
+	(No symbol) [0x00007FF6D26BBEB0]
+	(No symbol) [0x00007FF6D26D81E2]
+	(No symbol) [0x00007FF6D26BBA43]
+	(No symbol) [0x00007FF6D268D438]
+	(No symbol) [0x00007FF6D268E4D1]
+	GetHandleVerifier [0x00007FF6D2BA6ABD+3709933]
+	GetHandleVerifier [0x00007FF6D2BFFFFD+4075821]
+	GetHandleVerifier [0x00007FF6D2BF818F+4043455]
+	GetHandleVerifier [0x00007FF6D28C9766+706710]
+	(No symbol) [0x00007FF6D27AB90F]
+	(No symbol) [0x00007FF6D27A6AF4]
+	(No symbol) [0x00007FF6D27A6C4C]
+	(No symbol) [0x00007FF6D2796904]
+	BaseThreadInitThunk [0x00007FFB0C1353E0+16]
+	RtlUserThreadStart [0x00007FFB0D88485B+43]
+</status>
+</kw>
+<kw name="close my Browser" owner="LoginKeywords">
+<status status="NOT RUN" start="2024-03-12T16:00:23.508487" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2024-03-12T15:57:32.753884" elapsed="170.764145">ElementClickInterceptedException: Message: element click intercepted: Element &lt;div _ngcontent-myj-c416="" class="navigation-item-wrapper" data-item-marker="Purchase Requisition"&gt;...&lt;/div&gt; is not clickable at point (125, 519). Other element would receive the click: &lt;img id="mountains-image" class="mountains-image" src="assets/mountains-image.svg"&gt;
+  (Session info: chrome=122.0.6261.69)
+Stacktrace:
+	GetHandleVerifier [0x00007FF6D282AD32+56930]
+	(No symbol) [0x00007FF6D279F632]
+	(No symbol) [0x00007FF6D26542E5]
+	(No symbol) [0x00007FF6D26A0A80]
+	(No symbol) [0x00007FF6D269E8AB]
+	(No symbol) [0x00007FF6D269C0B4]
+	(No symbol) [0x00007FF6D269AE45]
+	(No symbol) [0x00007FF6D268F798]
+	(No symbol) [0x00007FF6D26BBC9A]
+	(No symbol) [0x00007FF6D268F09A]
+	(No symbol) [0x00007FF6D26BBEB0]
+	(No symbol) [0x00007FF6D26D81E2]
+	(No symbol) [0x00007FF6D26BBA43]
+	(No symbol) [0x00007FF6D268D438]
+	(No symbol) [0x00007FF6D268E4D1]
+	GetHandleVerifier [0x00007FF6D2BA6ABD+3709933]
+	GetHandleVerifier [0x00007FF6D2BFFFFD+4075821]
+	GetHandleVerifier [0x00007FF6D2BF818F+4043455]
+	GetHandleVerifier [0x00007FF6D28C9766+706710]
+	(No symbol) [0x00007FF6D27AB90F]
+	(No symbol) [0x00007FF6D27A6AF4]
+	(No symbol) [0x00007FF6D27A6C4C]
+	(No symbol) [0x00007FF6D2796904]
+	BaseThreadInitThunk [0x00007FFB0C1353E0+16]
+	RtlUserThreadStart [0x00007FFB0D88485B+43]
+</status>
+</test>
+<status status="FAIL" start="2024-03-12T15:57:31.055350" elapsed="172.462679"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="LoginTest">LoginTest</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
